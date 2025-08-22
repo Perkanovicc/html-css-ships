@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt - Svet Brodova</title>
+    <meta name="description" content="Kontaktirajte nas za više informacija o svetu brodova, vrstama i istoriji brodova." />
+    <meta name="keywords" content="kontakt, svet brodova, brodovi, jedrilice, ratni brodovi, kruzeri" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Svet Brodova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kontakt.html">Kontakt forma</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h1>Kontaktirajte nas</h1>
+        <form class="contact-form">
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime" required>
+
+            <label for="email">Email adresa:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Koja vrsta brodova vas najviše zanima?</label>
+            <label><input type="radio" name="tip" value="kruzeri"> Kruzeri</label>
+            <label><input type="radio" name="tip" value="ratni"> Ratni brodovi</label>
+
+            <label>Koje teme želite da obradimo?</label>
+            <label><input type="checkbox" name="tema" value="istorija"> Istorija</label>
+            <label><input type="checkbox" name="tema" value="vrste"> Vrste</label>
+
+            <label for="zemlja">Iz koje ste zemlje?</label>
+            <select id="zemlja" name="zemlja">
+                <option value="srbija">Srbija</option>
+                <option value="hrvatska">Hrvatska</option>
+                <option value="cg">Crna Gora</option>
+                <option value="drugo">Drugo</option>
+            </select>
+
+            <label for="poruka">Vaša poruka:</label>
+            <textarea id="poruka" name="poruka" rows="4"></textarea>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+      
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+          burger.classList.toggle('open');
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vrste Brodova - Svet Brodova</title>
+    <meta name="description" content="Upoznajte različite vrste brodova: jedrilice, kruzere, ratne brodove i druge zanimljive modele." />
+    <meta name="keywords" content="vrste brodova, jedrilica, kruzer, ratni brod, svet brodova" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Svet Brodova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kontakt.html">Kontakt forma</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+    </header>
+
+    <section class="hero-types">
+        <div class="hero-text">
+            <h1>Vrste brodova</h1>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Zanimljive kategorije brodova</h2>
+        <p class="fade-in">
+            Brodovi dolaze u najrazličitijim oblicima i veličinama, svaki sa svojom svrhom i pričom. Od moćnih ratnih brodova, preko luksuznih kruzera, pa sve do brze mornarice - svaki tip ima posebnu ulogu u savremenom svetu plovidbe.
+        </p>
+
+        <div class="brodovi-lista">
+            <div class="brod fade-in">
+                <h3>🛳️ Kruzeri</h3>
+                <p>Ploveće palate, prave plutajuće metropole. Izdvajamo: <strong>Symphony of the Seas</strong> - jedan od najvećih brodova na svetu, sa kapacitetom za preko 6000 putnika!</p>
+            </div>
+            <div class="brod fade-in">
+                <h3>⚔️ Ratni brodovi</h3>
+                <p>Tehnološki najsavremeniji, brzi i moćni. Izdvajamo: <strong>USS Zumwalt</strong> - futuristički razarač sa stealth tehnologijom.</p>
+            </div>
+            <div class="brod fade-in">
+                <h3>🚢 Teretni brodovi</h3>
+                <p>Transportuju robu širom sveta. Izdvajamo: <strong>MSC Gülsün</strong> - kolos koji može da nosi preko 23.000 kontejnera!</p>
+            </div>
+            <div class="brod fade-in">
+                <h3>⛴️ Trajekti</h3>
+                <p>Povezuju kopno i ostrva svakodnevno. Izdvajamo: <strong>MV Ulysses</strong> - najveći trajekt za vozila i putnike u Evropi.</p>
+            </div>
+            <div class="brod fade-in">
+                <h3>⛵ Jedrilice</h3>
+                <p>Tihi, koriste snagu vetra. Izdvajamo: <strong>Perseus^3</strong> - superjahta sa najvećim jarbolom od ugljeničnih vlakana na svetu.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+      
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+          burger.classList.toggle('open');
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Svet Brodova - Sve o brodovima, jedrilicama, kruzerima i ratnim brodovima</title>
+    <meta name="description" content="Dobrodošli na Svet Brodova - vaš vodič kroz istoriju, vrste i zanimljivosti o brodovima kao što su jedrilice, ratni brodovi, kruzeri i Titanik." />
+    <meta name="keywords" content="svet brodova, brodovi, brod, jedrilica, ratni brod, kruzer, titanik" />
+    <link rel="stylesheet" href="/css/style.css" />
+      
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Svet Brodova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kontakt.html">Kontakt forma</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+        
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dobrodošli na sajt o brodovima!</h1>
+            <div class="buttons">
+                <a href="istorija.html" class="btn">Istorija brodova</a>
+                <a href="vrste.html" class="btn">Vrste brodova</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+      
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+          burger.classList.toggle('open');
+        });
+      </script>
+</body>
+</html>

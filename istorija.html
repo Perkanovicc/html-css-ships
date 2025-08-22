@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Istorija Brodova - Svet Brodova</title>
+    <meta name="description" content="Saznajte zanimljive činjenice i istoriju brodova - od drevnih jedrilica do modernih ratnih brodova i kruzera." />
+    <meta name="keywords" content="istorija brodova, svet brodova, brodovi, jedrilica, ratni brod, kruzer" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Svet Brodova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kontakt.html">Kontakt forma</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+    </header>
+
+    <section class="hero-history">
+        <div class="hero-text">
+            <h1>Istorija brodova</h1>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Zanimljiva istorija plovidbe</h2>
+        <p class="animated fade-in">
+            Od trenutka kada su ljudi prvi put kročili na splavove pre više od 10.000 godina, plovidba je postala ključna za razvoj civilizacije. 
+            Egipćani su plovili Nilom još 4000. godine p.n.e, a Feničani su gradili moćne trgovačke flote. Tokom vekova, brodovi su se razvijali - od jedrenjaka i galija, pa sve do današnjih ogromnih kruzera i teretnjaka.
+            Nisu samo ratovi i trgovina pokretali brodove, već i ljudska znatiželja - Kolumbo, Magelan, pa i savremeni istraživači okeana, svi su koristili brodove da bi proširili granice poznatog sveta.
+        </p>
+    </section>
+
+    <section class="fun-facts">
+        <h2>Zanimljivosti o brodovima</h2>
+        <ul>
+            <li class="fun-item">🛳️ Titanic je bio jedan od najluksuznijih brodova svog vremena, sa dužinom od 269m!</li>
+            <li class="fun-item">⚓ Najveći brod ikada napravljen bio je supertanker "Seawise Giant" - duži od 450 metara!</li>
+            <li class="fun-item">🌊 Brodovi mogu ploviti i po ledu - ledolomci imaju posebno ojačane trupove.</li>
+            <li class="fun-item">🧭 Feničani su među prvima koristili zvezde za navigaciju na moru.</li>
+        </ul>
+    </section>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+      
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+          burger.classList.toggle('open');
+        });
+      </script>
+</body>
+</html>

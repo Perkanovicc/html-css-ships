@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O Brodovima - Svet Brodova</title>
+    <meta name="description" content="Saznajte osnovne informacije o brodovima, njihovoj važnosti kroz istoriju i značaju danas." />
+    <meta name="keywords" content="o brodovima, svet brodova, brod, jedrilica, ratni brod, kruzer" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Svet Brodova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kontakt.html">Kontakt forma</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+    </header>
+
+    <section class="hero-about">
+        <div class="hero-text">
+            <h1>O brodovima</h1>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Šta su brodovi i zašto su važni?</h2>
+        <p class="fade-in">
+            Brodovi su omogućili ljudima da savladaju velike vodene površine - mora, okeane i reke. Kroz istoriju, brodovi su igrali ključnu ulogu u trgovini, ratovanju, migracijama, ali i u istraživanju novih kontinenata. Od drvenih jedrenjaka, do savremenih supertankera i kruzera, brodovi su postali simbol ljudske sposobnosti da osvoji nepregledne okeane.
+        </p>
+
+        <h2>Brodovi danas</h2>
+        <p class="fade-in">
+            Danas, brodovi su okosnica globalne ekonomije - preko 90% međunarodne robe prevozi se morem. Osim toga, savremeni brodovi se koriste i za turizam, naučna istraživanja, pa čak i spasilačke misije. Tehnologija se brzo razvija – brodovi postaju sve efikasniji, brži i bezbedniji.
+        </p>
+
+        <h2>Budućnost plovidbe</h2>
+        <p class="fade-in">
+            U budućnosti očekujemo autonomne brodove bez posade, brodove na obnovljive izvore energije i još efikasnije načine navigacije. Iako je brod stara tehnologija, njegovo vreme tek dolazi.
+        </p>
+    </section>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+      
+        burger.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+          burger.classList.toggle('open');
+        });
+      </script>
+</body>
+</html>
